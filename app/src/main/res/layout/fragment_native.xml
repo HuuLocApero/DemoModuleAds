@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.demo.ui.fragments.demo_ads.NativeFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.demo.utils.customview.HeaderView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:headerListener="@{fragment}"
+            app:headerTitle="@string/native_ads"
+            app:optionIcon="@drawable/ic_tick_circle"
+            app:showBackButton="true"
+            app:showOptionButton="false" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/exo2_semibold"
+                            android:text="Native control"
+                            android:textColor="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/flAdsControl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorShimmerBG">
+
+                            <include layout="@layout/layout_shimmer_native" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/exo2_semibold"
+                            android:text="Native medium"
+                            android:textColor="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/flAdsMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0DFFFFFF">
+
+                            <include layout="@layout/loading_native_medium" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/exo2_semibold"
+                            android:text="Native small"
+                            android:textColor="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/flAdsSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0DFFFFFF">
+
+                            <include layout="@layout/loading_native_small" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo2_semibold"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:text="Load in screen"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/exo2_semibold"
+                            android:text="Native control"
+                            android:textColor="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/flAdsControlLoadInScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorShimmerBG">
+
+                            <include layout="@layout/layout_shimmer_native" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/exo2_semibold"
+                            android:text="Native medium"
+                            android:textColor="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/flAdsMediumLoadInScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0DFFFFFF">
+
+                            <include layout="@layout/loading_native_medium" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/exo2_semibold"
+                            android:text="Native small"
+                            android:textColor="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/flAdsSmallLoadInScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0DFFFFFF">
+
+                            <include layout="@layout/loading_native_small" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

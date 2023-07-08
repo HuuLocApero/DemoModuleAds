@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_gothic_art">
+        <item>Dark Beauty Unveiled: Gothic Artistry</item>
+        <item>Ornate Gothic Wonders: Artisanal Craftsmanship</item>
+        <item>Gothic Romance Unleashed: Artistic Tales</item>
+        <item>Sinister Elegance: Gothic Artistry Explored</item>
+        <item>Enigmatic Abstractions: Gothic Artistic Enthrallment</item>
+        <item>Darkened Canvases: Gothic Artistry Captured</item>
+    </string-array>
+
+    <string-array name="arr_grand_theft_auto">
+        <item>Cool and aloof with tattoos on the skin</item>
+        <item>Crime City Chronicles: GTA Legends</item>
+        <item>High-Octane Heists: GTA Thrillride</item>
+        <item>Urban Chaos Unleashed: GTA Mania</item>
+        <item>Street Gang Wars: GTA Showdown</item>
+        <item>Criminal Underworld: GTA Vendetta</item>
+        <item>Fast Cars, Big Guns: GTA Mayhem</item>
+        <item>Explosive Action: GTA Blitz</item>
+        <item>Notorious Outlaws: GTA Infamy</item>
+        <item>Crime Syndicate Chronicles: GTA Legacy</item>
+        <item>Reckless Rampage: GTA Street Fury</item>
+    </string-array>
+
+    <string-array name="arr_pop_art">
+        <item>A girl with glass headphone</item>
+    </string-array>
+
+    <string-array name="arr_mechanics">
+        <item>Gears in Motion</item>
+        <item>Tool Time</item>
+        <item>Workshop Wizardry</item>
+        <item>Futuristic Automaton</item>
+        <item>Robo-Pop Extravaganza</item>
+        <item>Digital Dancers</item>
+        <item>Robo-Muse Gallery</item>
+        <item>Robotic Renaissance</item>
+    </string-array>
+    <string-array name="arr_anime">
+        <item>Magical Girl Adventures</item>
+        <item>Samurai Sword Battles</item>
+        <item>Cute Animal Companions</item>
+        <item>Time-traveling Heroes</item>
+        <item>Epic Mecha Showdown</item>
+        <item>Mysterious Yokai Encounters</item>
+        <item>Idol Pop Star Journey</item>
+        <item>High School Romance Drama</item>
+        <item>Supernatural Powers Unleashed</item>
+    </string-array>
+    <string-array name="arr_baby_doll">
+        <item>A modern girl with pink hair</item>
+        <item>A girl with long white hair</item>
+        <item>Glamorous Fashion Diva</item>
+        <item>Sparkling Ballerina Beauty</item>
+        <item>Magical Mermaid Adventure</item>
+        <item>Barbie and Friends Beach Party</item>
+        <item>Fashion Runway Extravaganza</item>
+        <item>Elegant Royal Tea Party</item>
+        <item>Barbie\'s Superstar Stage Show</item>
+    </string-array>
+    <string-array name="arr_chinese_art">
+        <item>Blossoming Cherry Trees</item>
+        <item>Gentle Flowing Rivers</item>
+        <item>Tranquil Moonlit Lake</item>
+        <item>Mystical Dragon Legends</item>
+        <item>Graceful Dancing Brushstrokes</item>
+        <item>Majestic Great Wall Splendor</item>
+        <item>Celestial Beauty Revealed</item>
+        <item>Forbidden Love</item>
+        <item>Spirit Warriors</item>
+        <item>Ancient Prophecies</item>
+        <item>Divine Weapons</item>
+        <item>Hidden Cultivation</item>
+        <item>Intricate Plots</item>
+        <item>Art of War</item>
+        <item>Red-Crowned Crane Soars</item>
+        <item>Bamboo Whisperings</item>
+        <item>Elegant Lotus Blooms</item>
+    </string-array>
+    <string-array name="arr_dark_fantasy">
+        <item>Shadow Realm Chronicles</item>
+        <item>Eternal Nightfall</item>
+        <item>Cursed Bloodlines</item>
+        <item>Forbidden Sorcery</item>
+        <item>Haunting Whispers</item>
+        <item>Desolate Wastelands</item>
+        <item>Sinister Enchantments</item>
+        <item>Enchanted Cursed Forest</item>
+        <item>Veiled Secrets Unveiled</item>
+    </string-array>
+    <string-array name="arr_disney">
+        <item>Magical Disney Kingdom Adventures</item>
+        <item>Disney Princesses in Dreamland</item>
+    </string-array>
+    <string-array name="arr_fairy">
+        <item>Enchanted Forest Whispers: Fairy Tales Unfold</item>
+        <item>Sparkling Wings and Magical Things: Fairy Delights</item>
+        <item>Pixie Dust Dreams: Fantastical Fairy Realms</item>
+        <item>Fairyland Fantasia: Wonders of the Fairy Realm</item>
+        <item>Fluttering Fairies: Graceful Dance of Magic</item>
+        <item>Fairy Wings and Moonlit Things: Ethereal Enchantment</item>
+        <item>Fairy Princess Enchantments: Royalty of the Fairyland</item>
+        <item>Fairy Forest Fables: Tales of Enchanted Beings</item>
+        <item>Gossamer Glimmers: Fairy\'s Gentle Glow</item>
+    </string-array>
+    <string-array name="arr_horoscope">
+        <item>Celestial Insights: Zodiac Revelations</item>
+        <item>Cosmic Guidance: Horoscope Horizons</item>
+        <item>Astrological Alchemy: Unlocking Starry Secrets</item>
+        <item>Stellar Forecasts: Future in the Cosmos</item>
+        <item>Zodiac Whispers: Mysteries of the Signs</item>
+        <item>Lunar Illuminations: Astrological Journeys</item>
+        <item>Planetary Portals: Navigating Destiny\'s Path</item>
+        <item>Zodiac Chronicles: Tales of the Celestial Sky</item>
+        <item>Astrology Unveiled: Mapping the Zodiac</item>
+    </string-array>
+
+    <string-array name="arr_lol">
+        <item>Climb the Competitive Ladder</item>
+        <item>Epic Battles Unleashed: League of Legends Legends</item>
+        <item>Summoner\'s Rift Showdown: High-Stakes Confrontation</item>
+        <item>Champions of Valoran: Unleash Your Power</item>
+        <item>Nexus Siege: Defend or Destroy, Your Choice</item>
+        <item>Rift Rivals Clash: Battle for Supremacy</item>
+        <item>Explore the Rich Backstories</item>
+        <item>Turn the Tide of Battle</item>
+        <item>Teamfight Tactics: Strategic Auto-Battler Adventure</item>
+    </string-array>
+
+    <string-array name="arr_manga">
+        <item>Magical Realms: Dive into Manga Fantasy Worlds</item>
+        <item>Action-Packed Adventures: Manga Marvels Unleashed</item>
+        <item>Supernatural Encounters: Manga Tales of Wonder</item>
+        <item>Heartfelt Romance: Captivating Manga Love Stories</item>
+        <item>Dynamic Artistry: Expressive Manga Brushstrokes</item>
+        <item>Epic Battles: Unleashing Manga Warrior Spirits</item>
+        <item>Manga Futuristic Adventures</item>
+    </string-array>
+
+    <string-array name="arr_oil_painting">
+        <item>A girl with glass headphone</item>
+        <item>Ink and Brush Harmony</item>
+        <item>Tranquil Mountain Landscapes</item>
+        <item>Elegant Lotus Blooms</item>
+        <item>Calligraphic Expressions</item>
+        <item>Serene Watercolor Scenes</item>
+        <item>Silk Fan Dancers</item>
+        <item>Red-Crowned Crane Soars</item>
+        <item>Bamboo Whisperings</item>
+    </string-array>
+
+    <string-array name="arr_sketch">
+        <item>A girl with black hair</item>
+        <item>Dynamic Figure Studies</item>
+        <item>Expressive Gestures</item>
+        <item>Urban Sketching Adventures</item>
+        <item>Charcoal Shadows</item>
+        <item>Sketchbook Chronicles</item>
+        <item>Still Life Sketching</item>
+    </string-array>
+
+    <string-array name="arr_stain_glass">
+        <item>Vibrant Stained Glass Art</item>
+        <item>Light and Color Dance</item>
+        <item>Heavenly Stained Glass Art</item>
+        <item>Sacred Stained Glass Windows</item>
+        <item>Glass Gems of Creativity</item>
+        <item>Intricate Glass Designs</item>
+        <item>Ethereal Beauty Unveiled</item>
+    </string-array>
+
+    <string-array name="arr_star_war">
+        <item>Dark Side Temptations</item>
+        <item>Force Awakens</item>
+        <item>Galactic Battles Unleashed</item>
+        <item>Droids and Destiny</item>
+        <item>Epic Space <Odyssey></Odyssey></item>
+        <item>Millennium Falcon Soars</item>
+        <item>Imperial Empire Reigns</item>
+        <item>Space Opera Legends</item>
+    </string-array>
+
+    <string-array name="arr_watercolor">
+        <item>Serene Landscapes</item>
+        <item>Dreamy Seascapes</item>
+        <item>Tranquil Waters</item>
+        <item>Soft Petal Palette</item>
+        <item>Playful Brushstrokes</item>
+        <item>Abstract Color Washes</item>
+    </string-array>
+
+    <string-array name="arr_ghlibi">
+        <item>Whimsical World</item>
+        <item>Enchanted Forests</item>
+        <item>Magical Creatures</item>
+        <item>Heartwarming Tales</item>
+        <item>Flying Dreams</item>
+        <item>Wondrous Transformations</item>
+        <item>Childhood Fantasies</item>
+        <item>Mysterious Spirits</item>
+    </string-array>
+
+    <string-array name="arr_realistic">
+        <item>A girl with glass headphone</item>
+        <item>Hyperrealistic Portraits</item>
+        <item>Detailed Still Life</item>
+        <item>Urban Cityscapes</item>
+        <item>Lifelike Wildlife</item>
+        <item>Textured Oil Paintings</item>
+        <item>Naturalistic Watercolors</item>
+        <item>Realism in Nature</item>
+        <item>Reflective Glass and Metal</item>
+    </string-array>
+
+    <string-array name="arr_ink_style">
+        <item>Dynamic Ink Splatters</item>
+        <item>Inked Symbolism</item>
+        <item>Inked Comic Panels</item>
+        <item>Inked Traditional Tattoos</item>
+        <item>Minimalist Ink Drawings</item>
+        <item>Intricate Ink Patterns</item>
+        <item>Bold Ink Illustrations</item>
+        <item>Fluid Ink Brushstrokes</item>
+    </string-array>
+</resources>

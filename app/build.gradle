@@ -1,0 +1,227 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.firebase.appdistribution'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.demomoduleads'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId 'com.demomoduleads'
+        minSdk 24
+        targetSdk 33
+        versionCode 4
+        versionName "1.0.4"
+
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true    // Enable RS support
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        def formattedDate = new Date().format('MMM.dd.yyyy')
+        archivesBaseName = "AI-Generator_v${versionName}(${versionCode})_${formattedDate}"
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "type"
+    productFlavors {
+
+        appDev {
+            dimension "type"
+            buildConfigField("String", "FLAVOR_buildEnv", '"dev"')
+
+            manifestPlaceholders = [ad_app_id: "ca-app-pub-4584260126367940~5242761112"]
+
+            buildConfigField "String", "resume_high", "\"ca-app-pub-3940256099942544/3419835294\""
+            buildConfigField "String", "resume_medium", "\"ca-app-pub-3940256099942544/3419835294\""
+            buildConfigField "String", "resume_low", "\"ca-app-pub-3940256099942544/3419835294\""
+
+            buildConfigField "String", "open_splash_high", "\"ca-app-pub-3940256099942544/3419835294\""
+            buildConfigField "String", "open_splash_medium", "\"ca-app-pub-3940256099942544/3419835294\""
+            buildConfigField "String", "open_splash_low", "\"ca-app-pub-3940256099942544/3419835294\""
+
+            buildConfigField "String", "inter_splash_high", "\"ca-app-pub-3940256099942544/8691691433\""
+            buildConfigField "String", "inter_splash_medium", "\"ca-app-pub-3940256099942544/8691691433\""
+            buildConfigField "String", "inter_splash_low", "\"ca-app-pub-3940256099942544/8691691433\""
+
+            buildConfigField "String", "native_language_high", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "native_language_medium", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "native_language_low", "\"ca-app-pub-3940256099942544/2247696110\""
+
+            buildConfigField "String", "native_onboarding_high", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "native_onboarding_medium", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "native_onboarding_low", "\"ca-app-pub-3940256099942544/2247696110\""
+
+            buildConfigField "String", "inter_test_high", "\"ca-app-pub-3940256099942544/8691691433\""
+            buildConfigField "String", "inter_test_medium", "\"ca-app-pub-3940256099942544/8691691433\""
+            buildConfigField "String", "inter_test_low", "\"ca-app-pub-3940256099942544/8691691433\""
+
+            buildConfigField "String", "reward_test_high", "\"ca-app-pub-3940256099942544/5224354917\""
+            buildConfigField "String", "reward_test_medium", "\"ca-app-pub-3940256099942544/5224354917\""
+            buildConfigField "String", "reward_test_low", "\"ca-app-pub-3940256099942544/5224354917\""
+
+            buildConfigField "String", "reward_type_interstitial", "\"ca-app-pub-3940256099942544/5354046379\""
+
+            buildConfigField "String", "banner", "\"ca-app-pub-3940256099942544/6300978111\""
+            buildConfigField "String", "banner_collapse", "\"ca-app-pub-3940256099942544/6300978111\""
+
+            // inter for controller
+            buildConfigField "String", "inter_high", "\"ca-app-pub-3940256099942544/8691691433\""
+            buildConfigField "String", "inter_medium", "\"ca-app-pub-3940256099942544/8691691433\""
+
+            // native for controller
+            buildConfigField "String", "native_high", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "native_medium", "\"ca-app-pub-3940256099942544/2247696110\""
+
+            buildConfigField "Boolean", "ENV_TEST", "true"
+            buildConfigField "String", "BASE_URL", "\"https://Base.com\""
+        }
+
+        appProd {
+            dimension "type"
+            buildConfigField("String", "FLAVOR_buildEnv", '"prod"')
+
+            manifestPlaceholders = [ad_app_id: "ca-app-pub-4584260126367940~5242761112"]
+
+
+            buildConfigField "Boolean", "ENV_TEST", "false"
+            buildConfigField "String", "BASE_URL", "\"https://Base.com\""
+
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+            kotlinOptions {
+                jvmTarget = "1.8"
+            }
+        }
+
+        bundle {
+            language {
+                enableSplit = false
+            }
+        }
+    }
+
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
+
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['hzgraperlibrary_v1.0.0.jar'])
+        implementation 'androidx.core:core-ktx:1.10.1'
+        implementation 'androidx.appcompat:appcompat:1.6.1'
+        implementation 'com.google.android.material:material:1.9.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+        implementation "androidx.navigation:navigation-fragment-ktx:2.6.0"
+        implementation "androidx.navigation:navigation-runtime-ktx:2.6.0"
+        implementation "androidx.navigation:navigation-ui-ktx:2.6.0"
+        implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+        implementation 'com.google.code.gson:gson:2.10.1'
+        implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+        // for apero ads
+        implementation 'com.facebook.shimmer:shimmer:0.5.0'
+        implementation 'apero-inhouse:apero-ads:1.0.7-alpha02'
+        implementation 'apero:language.first.open:1.1.5@aar'
+
+        // firebase
+        implementation platform('com.google.firebase:firebase-bom:31.5.0')
+        implementation 'com.google.firebase:firebase-analytics-ktx'
+        implementation 'com.google.firebase:firebase-config-ktx:21.4.0'
+        implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+        // dagger
+        implementation 'com.google.dagger:dagger-android:2.42'
+        implementation 'com.google.dagger:dagger-android-support:2.42'
+        kapt 'com.google.dagger:dagger-compiler:2.44'
+        kapt 'com.google.dagger:dagger-android-processor:2.42'
+
+        // ui
+        implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
+        implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
+        implementation 'androidx.navigation:navigation-runtime-ktx:2.6.0'
+
+        // room
+        implementation "androidx.room:room-ktx:2.5.1"
+        kapt "androidx.room:room-compiler:2.5.1"
+
+        // net
+        implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+        implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+        implementation "com.squareup.retrofit2:retrofit:2.9.0"
+        implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.2"
+        implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+        implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+
+        def coroutines_version = "1.7.2"
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-guava:$coroutines_version"
+
+        // Gson
+        implementation 'com.google.code.gson:gson:2.10.1'
+
+        implementation 'com.airbnb.android:lottie:6.0.0'
+
+        implementation 'androidx.preference:preference-ktx:1.2.0'
+
+        implementation "org.jetbrains.kotlin:kotlin-reflect:1.8.10"
+
+        implementation 'androidx.appcompat:appcompat:1.7.0-alpha02'
+        implementation 'com.google.android.material:material:1.0.0-alpha1'
+
+        implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+        //Glide
+        implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+        // check leak memories
+        debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+
+        //ads
+        implementation 'com.google.android.gms:play-services-ads:22.2.0'
+        implementation 'com.google.ads.mediation:applovin:11.10.1.0'
+        implementation 'com.google.ads.mediation:vungle:6.12.1.1'
+        implementation 'com.google.ads.mediation:pangle:5.2.0.3.0'
+        implementation 'com.google.ads.mediation:ironsource:7.3.1.0'
+        implementation 'com.google.ads.mediation:mintegral:16.4.61.0'
+        implementation 'com.pangle.global:adapter-for-admob:2.0.0'
+        implementation 'com.pangle.global:ads-sdk:5.2.0.3'
+        implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+        implementation 'com.google.ads.mediation:facebook:6.14.0.0'
+
+    }
+}

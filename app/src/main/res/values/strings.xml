@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Demo module ads</string>
+    <string name="facebook_app_id" translatable="false">654844229560426</string>
+    <string name="loading">Loading</string>
+    <string name="this_action_can_contain_ads">(This action can contain ads)</string>
+    <string name="language">Language</string>
+    <string name="ad_upper_first">Ad</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="exit_title">Do you ready want to exit?</string>
+    <string name="generate">Generate</string>
+    <string name="inspiration">Inspiration</string>
+    <string name="collection">Collection</string>
+    <string name="japanese">Japanse</string>
+    <string name="korean">Korean</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="english">English</string>
+    <string name="german">German</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="portugal">Portugal</string>
+    <string name="title_onboarding_1">Unleash\nYour Creativity</string>
+    <string name="content_onboarding_1">Transform Photos into Unique Artworks</string>
+    <string name="title_onboarding_2">Discover Your\nArtistic Identity</string>
+    <string name="title_onboarding_3">Create &amp; Share\nMasterpieces</string>
+    <string name="content_onboarding_2">Explore Captivating Styles</string>
+    <string name="content_onboarding_3">Connect with the Art Community</string>
+    <string name="reward">Reward</string>
+    <string name="interstitial">Interstitial</string>
+    <string name="native_ads">Native</string>
+    <string name="next_fragment">Next fragment</string>
+    <string name="ooops">Ooops!</string>
+    <string name="no_internet_connection_found">No internet connection found!</string>
+    <string name="try_again">Try again</string>
+    <string name="close">Close</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="request_permission">Request permission</string>
+    <string name="share_photo">Share photo</string>
+    <string name="indonesian">Indonesia</string>
+    <string name="hindi">Hindi</string>
+</resources>

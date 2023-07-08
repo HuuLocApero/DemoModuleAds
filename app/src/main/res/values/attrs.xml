@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeaderView">
+        <attr name="gravity">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="showBackButton" format="boolean" />
+        <attr name="goneButton" format="boolean" />
+        <attr name="showOptionButton" format="boolean" />
+        <attr name="goneOptionButton" format="boolean" />
+        <attr name="headerBackground" format="reference" />
+        <attr name="headerTitle" format="reference" />
+        <attr name="backIcon" format="reference" />
+        <attr name="optionIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TrapezoidImageView">
+        <attr name="position">
+            <enum name="top" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="incline" format="reference|dimension" />
+    </declare-styleable>
+    <declare-styleable name="TrapezoidLayout">
+        <attr name="layout_angle" format="float" />
+        <attr name="layout_margins" format="boolean" />
+        <attr name="layout_position" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="4" />
+            <enum name="top" value="8" />
+        </attr>
+        <attr name="layout_direction" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AICropImageView">
+        <attr name="cropGuidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0" />
+            <enum name="center" value="1" />
+            <enum name="centerCrop" value="2" />
+            <enum name="centerInside" value="3" />
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="rectangleVerticalOnly" value="2" />
+            <enum name="rectangleHorizontalOnly" value="3" />
+        </attr>
+        <attr name="cornerShape">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+        <attr name="cropAutoZoomEnabled" format="boolean" />
+        <attr name="cropMaxZoom" format="integer" />
+        <attr name="cropMultiTouchEnabled" format="boolean" />
+        <attr name="cropCenterMoveEnabled" format="boolean" />
+        <attr name="cropFixAspectRatio" format="boolean" />
+        <attr name="cropAspectRatioX" format="integer" />
+        <attr name="cropAspectRatioY" format="integer" />
+        <attr name="cropInitialCropWindowPaddingRatio" format="float" />
+        <attr name="cropBorderLineThickness" format="dimension" />
+        <attr name="cropBorderLineColor" format="color" />
+        <attr name="cropBorderCornerThickness" format="dimension" />
+        <attr name="cropBorderCornerOffset" format="dimension" />
+        <attr name="cropBorderCornerLength" format="dimension" />
+        <attr name="cropBorderCornerColor" format="color" />
+        <attr name="cropGuidelinesThickness" format="dimension" />
+        <attr name="cropGuidelinesColor" format="color" />
+        <attr name="cropBackgroundColor" format="color" />
+        <attr name="cropSnapRadius" format="dimension" />
+        <attr name="cropTouchRadius" format="dimension" />
+        <attr name="cropSaveBitmapToInstanceState" format="boolean" />
+        <attr name="cropShowCropOverlay" format="boolean" />
+        <attr name="cropShowProgressBar" format="boolean" />
+        <attr name="cropMinCropWindowWidth" format="dimension" />
+        <attr name="cropMinCropWindowHeight" format="dimension" />
+        <attr name="cropMinCropResultWidthPX" format="float" />
+        <attr name="cropMinCropResultHeightPX" format="float" />
+        <attr name="cropMaxCropResultWidthPX" format="float" />
+        <attr name="cropMaxCropResultHeightPX" format="float" />
+        <attr name="cropFlipHorizontally" format="boolean" />
+        <attr name="cropFlipVertically" format="boolean" />
+        <attr name="cropCornerCircleFillColor" format="color" />
+        <attr name="cropCornerRadius" format="dimension" />
+        <attr name="cropperLabelTextSize" format="float" />
+        <attr name="cropperLabelTextColor" format="color" />
+        <attr name="cropperLabelText" format="string" />
+        <attr name="cropShowLabel" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TrapeziumView">
+        <attr name="shapeColor" format="color" />
+        <attr name="edgeRadius" format="float" />
+        <attr name="slopeLength" format="float" />
+        <attr name="slopeType" format="integer">
+            <enum name="topRight" value="0" />
+            <enum name="topLeft" value="1" />
+            <enum name="bottomRight" value="2" />
+            <enum name="bottomLeft" value="3" />
+            <enum name="leftTop" value="4" />
+            <enum name="leftBottom" value="5" />
+            <enum name="rightTop" value="6" />
+            <enum name="rightBottom" value="7" />
+            <enum name="rightTopLeftBottom" value="8" />
+        </attr>
+    </declare-styleable>
+
+<!--    <declare-styleable name="TrapeziumTextView">-->
+<!--        <attr name="shapeColor" format="color" />-->
+<!--        <attr name="position">-->
+<!--            <enum name="top" value="0" />-->
+<!--            <enum name="middle" value="1" />-->
+<!--            <enum name="bottom" value="2" />-->
+<!--        </attr>-->
+<!--        <attr name="incline" format="reference|dimension" />-->
+<!--    </declare-styleable>-->
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.demo.ui.fragments.demo_ads.RewardFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.demo.utils.customview.HeaderView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:headerListener="@{fragment}"
+            app:headerTitle="@string/reward"
+            app:optionIcon="@drawable/ic_tick_circle"
+            app:showBackButton="true"
+            app:showOptionButton="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rewardAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rewardAdsInters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Reward type interstitial" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

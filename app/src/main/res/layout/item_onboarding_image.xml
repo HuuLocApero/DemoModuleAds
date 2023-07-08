@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/onboarding_image_size"
+        android:layout_height="@dimen/onboarding_image_size"
+        tools:background="@drawable/ic_logo"
+        android:layout_marginHorizontal="4dp" />
+</layout>

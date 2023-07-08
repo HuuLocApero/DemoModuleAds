@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.demo.ui.fragments.home.HomeFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.demo.base.BaseViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nativeAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Native" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/interAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Inter" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rewardAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="banner" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bannerCollapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="banner collapse" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layoutBanner"
+                layout="@layout/layout_banner_control" />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

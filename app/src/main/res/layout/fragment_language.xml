@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="prefUtils"
+            type="com.demo.utils.PrefUtils" />
+
+        <variable
+            name="fragment"
+            type="com.demo.ui.fragments.language.LanguageFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.demo.utils.customview.HeaderView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:headerListener="@{fragment}"
+            app:headerTitle="@string/language"
+            app:optionIcon="@drawable/ic_tick_circle"
+            app:showBackButton="@{fragment.args.isFromSetting}"
+            app:showOptionButton="false" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_language" />
+
+        <FrameLayout
+            android:id="@+id/flAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorShimmerBG">
+
+            <include layout="@layout/layout_shimmer_native" />
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

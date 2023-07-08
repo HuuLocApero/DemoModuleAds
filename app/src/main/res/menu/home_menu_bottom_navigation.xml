@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/generateFragment"
+        android:icon="@drawable/ic_magic_star"
+        android:title="@string/generate" />
+    <item
+        android:id="@+id/inspirationFragment"
+        android:icon="@drawable/ic_lamp_charge"
+        android:title="@string/inspiration" />
+    <item
+        android:id="@+id/collectionFragment"
+        android:icon="@drawable/ic_heart_tick"
+        android:title="@string/collection" />
+</menu>

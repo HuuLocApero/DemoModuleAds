@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#291338</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#50505E</color>
+
+    <color name="color_F3FAFF">#F3FAFF</color>
+    <color name="colorAds">#9C4FFE</color>
+
+
+    <color name="colorTheme">#025DB8</color>
+    <color name="colorIndicator">#20558A</color>
+
+    <color name="colorTextNormal">@color/black</color>
+    <color name="colorTextSpecial">@color/colorTheme</color>
+
+    <color name="colorSetting">#F9F9F9</color>
+    <color name="colorBackgroundButtonBack">#EDF6FF</color>
+    <color name="colorButtonBack">#20558A</color>
+    <color name="colorPrimary">#20558A</color>
+
+    <color name="colorLightBlue">#EDF6FF</color>
+    <color name="colorLightGray">#F9F9F9</color>
+    <color name="colorDarkGray">#AAAAB5</color>
+
+    <color name="colorDiabetesLow">#FF5ED4</color>
+    <color name="colorDiabetesNormal">#11CC19</color>
+    <color name="colorDiabetesPrediabetes">#EDAB00</color>
+    <color name="colorDiabetes">#FF3543</color>
+    <color name="color_hint">#B1B0B0</color>
+    <color name="color_D8D8DA">#D8D8DA</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_8C8C8C">#8C8C8C</color>
+    <color name="color_FF3543">#FF3543</color>
+    <color name="color_025DB8">#025DB8</color>
+
+    <color name="colorNavigationHome">#12FFFFFF</color>
+    <color name="colorShimmerBG">#0DFFFFFF</color>
+    <color name="colorShimmerItem">#26FFFFFF</color>
+    <color name="colorNativeBG">#809C4FFE</color>
+    <color name="color_A5FFEA">#A5FFEA</color>
+    <color name="color_71F4DB">#71F4DB</color>
+    <color name="colorHint">#8B8B8B</color>
+    <color name="color_9C4FFE">#9C4FFE</color>
+    <color name="color_EAEAEA">#EAEAEA</color>
+    <color name="color_white_20">#66FFFFFF</color>
+    <color name="color_E2E3E3">#E2E3E3</color>
+</resources>

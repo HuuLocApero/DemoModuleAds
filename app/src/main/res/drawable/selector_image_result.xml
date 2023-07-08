@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_white_radius_10_strok_71f4db" android:state_selected="true" />
+    <item android:drawable="@drawable/bg_white_radius_10" />
+</selector>
