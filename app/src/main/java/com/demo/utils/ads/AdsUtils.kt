@@ -11,19 +11,24 @@ class AdsUtils {
 
         val prefUtils = PrefUtils.instant
 
+        // if u use ads controller, u add rewardLoaderHigh/rewardLoaderNormal to rewardAll
+        // and if not, remove rewardLoaderHigh/rewardLoaderNormal, but keep rewardAll
         val rewardAll: RewardAds = RewardAds(
             adsName = "reward_all",
             rewardLoaderHigh = RewardAds.RewardLoader(BuildConfig.reward_test_high, 3, condition = true, isRewardInterstitial = false),
             rewardLoaderNormal = RewardAds.RewardLoader(BuildConfig.reward_test_medium, 3, condition = true, isRewardInterstitial = false),
         )
 
+        // if u use ads controller, u add interLoaderHigh/interLoaderNormal to rewardAll
+        // and if not, remove interLoaderHigh/interLoaderNormal, but keep rewardAll
         val interAll: InterstitialAds = InterstitialAds(
             adsName = "inter_all",
             interLoaderHigh = InterstitialAds.InterstitialLoader(BuildConfig.inter_high, 3, true),
             interLoaderNormal = InterstitialAds.InterstitialLoader(BuildConfig.inter_medium, 3, true),
         )
 
-        // native
+        // if u use ads controller, u add nativeLoaderHigh/nativeLoaderNormal to rewardAll
+        // and if not, remove nativeLoaderHigh/nativeLoaderNormal, but keep rewardAll
         val nativeAll = NativeAds(
             R.layout.native_control,
             adsName = "native_all",
@@ -32,6 +37,10 @@ class AdsUtils {
         )
     }
 
+    // if it use with controller above, u can set useController on/off to use this
+    // it has 3 params ads: interLoaderHigh/interLoaderNormal/interLoaderLow
+    // u can set condition show/load to InterstitialLoader
+    // adsName/eventView/eventClick use for log tracking event
     val interWithController: InterstitialAds = InterstitialAds(
         interLoaderHigh = InterstitialAds.InterstitialLoader(BuildConfig.inter_test_high, 1, true),
         adsName = "inter_test",
@@ -56,6 +65,7 @@ class AdsUtils {
         useController = false
     )
 
+    // same behavior with interstitial ads
     val rewardTypeReward: RewardAds = RewardAds(
         rewardLoaderHigh = RewardAds.RewardLoader(BuildConfig.reward_test_high, 1, condition = true, isRewardInterstitial = false),
         adsName = "inter_test",
@@ -72,6 +82,7 @@ class AdsUtils {
         useController = true
     )
 
+    // same behavior with interstitial ads
     val nativeLanguage: NativeAds = NativeAds(
         R.layout.native_control,
         useController = false,
