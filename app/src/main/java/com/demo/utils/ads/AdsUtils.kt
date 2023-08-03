@@ -85,7 +85,6 @@ class AdsUtils {
     // same behavior with interstitial ads
     val nativeLanguage: NativeAds = NativeAds(
         R.layout.native_control,
-        useController = false,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_language_high, 1, true),
         nativeLoaderNormal = NativeAds.NativeLoader(BuildConfig.native_language_medium, 1, true),
         nativeLoaderLow = NativeAds.NativeLoader(BuildConfig.native_language_low, 1, true),
@@ -95,7 +94,6 @@ class AdsUtils {
     )
     val nativeOnBoarding: NativeAds = NativeAds(
         R.layout.native_medium,
-        useController = false,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         nativeLoaderNormal = NativeAds.NativeLoader(BuildConfig.native_onboarding_medium, 1, true),
         nativeLoaderLow = NativeAds.NativeLoader(BuildConfig.native_onboarding_low, 1, true),
@@ -106,7 +104,6 @@ class AdsUtils {
 
     val nativeWithControllerControll: NativeAds = NativeAds(
         R.layout.native_control,
-        useController = true,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         adsName = "nativeWithController",
         eventView = EventClick.DISPLAY_AD_SCR_ONBOARD.content,
@@ -115,7 +112,6 @@ class AdsUtils {
 
     val nativeWithControllerMedium: NativeAds = NativeAds(
         R.layout.native_medium,
-        useController = true,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         adsName = "nativeWithController",
         eventView = EventClick.DISPLAY_AD_SCR_ONBOARD.content,
@@ -124,7 +120,6 @@ class AdsUtils {
 
     val nativeWithControllerSmall: NativeAds = NativeAds(
         R.layout.native_small,
-        useController = true,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         adsName = "nativeWithController",
         eventView = EventClick.DISPLAY_AD_SCR_ONBOARD.content,
@@ -133,7 +128,6 @@ class AdsUtils {
 
     val nativeLoadInScreenControll: NativeAds = NativeAds(
         R.layout.native_control,
-        useController = false,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         adsName = "nativeWithController",
         eventView = EventClick.DISPLAY_AD_SCR_ONBOARD.content,
@@ -142,7 +136,6 @@ class AdsUtils {
 
     val nativeLoadInScreenMedium: NativeAds = NativeAds(
         R.layout.native_medium,
-        useController = false,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         adsName = "nativeWithController",
         eventView = EventClick.DISPLAY_AD_SCR_ONBOARD.content,
@@ -151,7 +144,6 @@ class AdsUtils {
 
     val nativeLoadInScreenSmall: NativeAds = NativeAds(
         R.layout.native_small,
-        useController = false,
         nativeLoaderHigh = NativeAds.NativeLoader(BuildConfig.native_onboarding_high, 1, true),
         adsName = "nativeWithController",
         eventView = EventClick.DISPLAY_AD_SCR_ONBOARD.content,

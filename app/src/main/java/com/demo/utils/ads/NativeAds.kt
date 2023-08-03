@@ -22,26 +22,22 @@ class NativeAds(
     var adsName: String = "",
     var eventView: String = "",
     var eventClick: String = "",
-    var useController: Boolean = false
 ) {
     init {
         nativeLoaderHigh?.layoutCustom = layoutCustom
         nativeLoaderHigh?.adsName = adsName
         nativeLoaderHigh?.eventView = eventView
         nativeLoaderHigh?.eventClick = eventClick
-        nativeLoaderHigh?.useController = useController
 
         nativeLoaderNormal?.layoutCustom = layoutCustom
         nativeLoaderNormal?.adsName = adsName
         nativeLoaderNormal?.eventView = eventView
         nativeLoaderNormal?.eventClick = eventClick
-        nativeLoaderNormal?.useController = useController
 
         nativeLoaderLow?.layoutCustom = layoutCustom
         nativeLoaderLow?.adsName = adsName
         nativeLoaderLow?.eventView = eventView
         nativeLoaderLow?.eventClick = eventClick
-        nativeLoaderLow?.useController = useController
     }
 
     companion object {
@@ -94,13 +90,13 @@ class NativeAds(
         AdsUtils.nativeAll.updateLayout(layoutCustom)
         if (allowShowAds()) {
             FirebaseUtils.eventMustDisplayAds(adsName)
-            if (useController && AdsUtils.nativeAll.nativeLoaderHigh?.canShowAds() == true) {
+            if (AdsUtils.nativeAll.nativeLoaderHigh?.canShowAds() == true) {
                 Log.d(TAG, "showAds: high id(${AdsUtils.nativeAll.nativeLoaderHigh.idAds})")
                 AdsUtils.nativeAll.nativeLoaderHigh.showAds(activity, container, false)
-            } else if (useController && AdsUtils.nativeAll.nativeLoaderNormal?.canShowAds() == true) {
+            } else if (AdsUtils.nativeAll.nativeLoaderNormal?.canShowAds() == true) {
                 Log.d(TAG, "showAds: normal id(${AdsUtils.nativeAll.nativeLoaderNormal.idAds})")
                 AdsUtils.nativeAll.nativeLoaderNormal.showAds(activity, container, false)
-            } else if (useController && AdsUtils.nativeAll.nativeLoaderLow?.canShowAds() == true) {
+            } else if (AdsUtils.nativeAll.nativeLoaderLow?.canShowAds() == true) {
                 Log.d(TAG, "showAds: low id(${AdsUtils.nativeAll.nativeLoaderLow.idAds})")
                 AdsUtils.nativeAll.nativeLoaderLow.showAds(activity, container, false)
             } else if (nativeLoaderHigh?.canShowAds() == true) {
